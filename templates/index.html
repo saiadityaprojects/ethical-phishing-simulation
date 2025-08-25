@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Simulation Platform</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center; }
+        h1 { color: #333; margin-bottom: 20px; }
+        .form-group { margin-bottom: 20px; }
+        input[type="email"] { width: 80%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; }
+        button { padding: 12px 24px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+        .dashboard-link { margin-top: 20px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ethical Phishing Simulation</h1>
+        <p>Enter a test email to send a simulated phishing email:</p>
+        <form action="/send_email" method="post">
+            <div class="form-group">
+                <input type="email" name="recipient_email" placeholder="Enter recipient email" required>
+            </div>
+            <button type="submit">Send Phishing Email</button>
+        </form>
+        <p class="dashboard-link">
+            <a href="/dashboard">View Dashboard</a>
+        </p>
+    </div>
+</body>
+</html>
